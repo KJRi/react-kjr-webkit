@@ -1,0 +1,18 @@
+// .babelrc
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                // 描述您为项目支持/目标的环境
+                "targets": {
+                    "browsers": ["> 1%", "last 1 versions"]
+                },
+                "corejs": 2, //新版本需要指定核⼼库版本
+                // "usage"| "entry"| false，默认为false
+                "useBuiltIns": "usage"//按需注入
+            }
+        ],
+        "@babel/preset-react"
+    ]
+}
